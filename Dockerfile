@@ -7,7 +7,7 @@ RUN apk update && \
     	php-pdo_mysql php-mysqli \
     	php-gd php-iconv php-mcrypt \
     	php-mysql php-curl php-opcache php-ctype php-apcu \
-    	php-intl php-bcmath php-dom php-xmlreader mysql-client musl && \
+    	php-intl php-bcmath php-dom php-xmlreader mysql-client musl curl && \
     rm -rf /var/cache/apk/* && \
     sed -i 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g' /etc/php/php.ini
 
