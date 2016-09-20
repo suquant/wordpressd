@@ -4,8 +4,8 @@
 
 if [ ! -d /data/htdocs ] ; then
   mkdir -p /data/htdocs
-  curl -O -sSL https://wordpress.org/wordpress-4.4.2.tar.gz
-  tar -xzvf wordpress-4.4.2.tar.gz
+  curl -O -sSL https://wordpress.org/latest.tar.gz
+  tar -xzvf wordpress-*.tar.gz
   mv wordpress/* /data/htdocs/
   chown -R nginx:www-data /data/htdocs
 fi
