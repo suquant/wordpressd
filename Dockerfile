@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:3.3
 MAINTAINER George Kutsurua <g.kutsurua@gmail.com>
 
 RUN apk update && \
