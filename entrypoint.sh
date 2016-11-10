@@ -5,7 +5,7 @@
 if [ ! -d /data/htdocs ] ; then
   mkdir -p /data/htdocs
   curl -O -sSL https://wordpress.org/latest.tar.gz
-  tar -xzvf wordpress-*.tar.gz
+  tar -xzvf latest.tar.gz
   mv wordpress/* /data/htdocs/
   chown -R nginx:www-data /data/htdocs
 fi
